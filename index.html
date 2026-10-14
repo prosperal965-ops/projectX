@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXEWEAR — Modern Luxury Clothing & Haute Couture</title>
+  <meta name="description" content="Discover contemporary luxury fashion for men and women at LUXEWEAR. Bespoke tailoring, fine European linen, pure silk, and artisan leather goods in Nigeria.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Promotional announcements">
+    <div class="announcement-container">
+      <div class="announcement-text">
+        Complimentary express delivery across Nigeria on orders over <strong>₦100,000</strong> &bull; Use code <strong>LUXE10</strong> for 10% off
+      </div>
+      <button type="button" class="announcement-close" aria-label="Close announcement">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <button type="button" class="hamburger-btn" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="index.html" class="brand-logo" aria-label="LUXEWEAR Homepage">
+        LUXEWEAR
+        <span class="tagline">HAUTE COLLECTION</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="men.html" class="nav-link">Men</a>
+        <a href="women.html" class="nav-link">Women</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="action-btn search-trigger-btn" aria-label="Search catalogue">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="account.html" class="action-btn" aria-label="Customer Account">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="wishlist.html" class="action-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge-count badge-wishlist-count" style="display:none;">0</span>
+        </a>
+        <a href="cart.html" class="action-btn" aria-label="Shopping Bag">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge-count badge-cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-nav-header">
+        <span class="brand-logo" style="font-size:1.35rem;">LUXEWEAR</span>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop All</a>
+        <a href="men.html">Men's Collection</a>
+        <a href="women.html">Women's Collection</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="account.html">My Account</a>
+        <a href="wishlist.html">Saved Wishlist</a>
+      </nav>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="cart.html" class="btn btn-primary btn-block btn-sm">View Shopping Bag</a>
+      <p style="font-size:0.75rem; color:var(--text-muted); text-align:center;">Lagos &bull; Abuja &bull; Worldwide</p>
+    </div>
+  </aside>
+  <div class="drawer-overlay"></div>
+
+  <!-- Quick Search Modal -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search Catalogue">
+    <div class="search-modal-content">
+      <div class="search-form-header">
+        <h3>Search the LUXEWEAR Boutique</h3>
+        <button type="button" class="search-modal-close" aria-label="Close search">&times;</button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="search" name="q" placeholder="Search by garment, fabric, color, or style..." autocomplete="off" required>
+          <button type="submit" aria-label="Submit search">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </form>
+      <div class="search-suggestions">
+        <span>Trending:</span>
+        <a href="search.html?q=Linen" class="search-pill">European Linen</a>
+        <a href="search.html?q=Silk" class="search-pill">Mulberry Silk</a>
+        <a href="search.html?q=Wool" class="search-pill">Virgin Wool</a>
+        <a href="search.html?q=Overcoat" class="search-pill">Overcoats</a>
+        <a href="search.html?q=Loafers" class="search-pill">Penny Loafers</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Hero Showcase">
+      <img 
+        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=85" 
+        alt="LUXEWEAR Autumn/Winter Editorial Campaign" 
+        class="hero-bg-image"
+      />
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">The 2026 Autumn / Winter Edition</span>
+          <h1>Style That Speaks for You.</h1>
+          <p>
+            An intimate study of tailored silhouettes, indulgent textiles, and understated luxury. Designed in Milan and Lagos for discerning individuals who value timeless distinction.
+          </p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary btn-lg">Shop Now</a>
+            <a href="shop.html?sort=newest" class="btn btn-outline-white btn-lg">Explore Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED CATEGORIES -->
+    <section class="section-padding container" aria-label="Featured Categories">
+      <header class="section-header">
+        <span class="subtitle">Curated Departments</span>
+        <h2>Explore By Category</h2>
+        <p>Architectural lines and tactile luxury crafted for effortless daily sophistication.</p>
+      </header>
+
+      <div class="category-grid">
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80" alt="Men's Collection">
+          <div class="category-card-content">
+            <h3>Men</h3>
+            <p>Tailored outerwear, shirts, and trousers.</p>
+            <a href="men.html" class="category-link">Discover Men &rarr;</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Women's Collection">
+          <div class="category-card-content">
+            <h3>Women</h3>
+            <p>Silk gowns, structured blazers, and skirts.</p>
+            <a href="women.html" class="category-link">Discover Women &rarr;</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" alt="Footwear & Shoes">
+          <div class="category-card-content">
+            <h3>Shoes</h3>
+            <p>Hand-lasted calfskin loafers and Chelsea boots.</p>
+            <a href="shop.html?cat=shoes" class="category-link">Explore Shoes &rarr;</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Bags & Accessories">
+          <div class="category-card-content">
+            <h3>Accessories</h3>
+            <p>Full-grain leather totes, watches, and eyewear.</p>
+            <a href="shop.html?cat=accessories" class="category-link">View Accessories &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section-padding container" style="background-color: var(--bg-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);" aria-label="New Arrivals">
+      <header class="section-header">
+        <span class="subtitle">Just Unveiled</span>
+        <h2>New Arrivals</h2>
+        <p>The freshest expressions of our seasonal atelier release, available in limited production runs.</p>
+      </header>
+
+      <div class="products-grid" id="homeNewArrivalsGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="shop.html?sort=newest" class="btn btn-outline btn-lg">View All New Pieces</a>
+      </div>
+    </section>
+
+    <!-- EDITORIAL BANNER -->
+    <section class="container" aria-label="Editorial Seasonal Campaign">
+      <div class="editorial-banner">
+        <div class="editorial-grid">
+          <div class="editorial-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80" alt="Editorial Fashion Story">
+          </div>
+          <div class="editorial-content">
+            <span class="subtitle">Atelier Feature</span>
+            <h2>The Art of Tactile Restraint</h2>
+            <p>
+              We believe garments should resonate with quiet power rather than loud logos. Our signature double-faced virgin wool, 22-momme Mulberry silk, and European flax linen are curated from venerable heritage mills to ensure effortless drape that endures for generations.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="about.html" class="btn btn-secondary">Read Brand Story</a>
+              <a href="shop.html" class="btn btn-outline-white">Browse Archive</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="section-padding container" aria-label="Best Sellers">
+      <header class="section-header">
+        <span class="subtitle">Most Coveted</span>
+        <h2>Client Favorites & Best Sellers</h2>
+        <p>The hallmark designs cherished by our worldwide clientele season after season.</p>
+      </header>
+
+      <div class="products-grid" id="homeBestSellersGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="shop.html" class="btn btn-primary btn-lg">Shop Best Sellers</a>
+      </div>
+    </section>
+
+    <!-- VALUE PROPOSITIONS / WHY SHOP WITH US -->
+    <section class="container" aria-label="Brand Pillars">
+      <div class="perks-grid">
+        <div class="perk-item">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="perk-text">
+            <h4>Complimentary Shipping</h4>
+            <p>Free door-to-door expedited delivery across Nigeria on all orders above ₦100,000.</p>
+          </div>
+        </div>
+
+        <div class="perk-item">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="perk-text">
+            <h4>Artisanal Craftsmanship</h4>
+            <p>Each piece is individually inspected and finished with premium natural fibers and hardware.</p>
+          </div>
+        </div>
+
+        <div class="perk-item">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+          </div>
+          <div class="perk-text">
+            <h4>Seamless 14-Day Returns</h4>
+            <p>Hassle-free complimentary size exchange and return policy on all unworn items.</p>
+          </div>
+        </div>
+
+        <div class="perk-item">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="perk-text">
+            <h4>Dedicated Styling Concierge</h4>
+            <p>Personal styling, bespoke sizing advice, and prompt client care via WhatsApp & email.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-padding container" aria-label="Customer Testimonials">
+      <header class="section-header">
+        <span class="subtitle">Client Endorsements</span>
+        <h2>What Our Patrons Say</h2>
+        <p>Real testimonials from patrons who have incorporated LUXEWEAR into their defining moments.</p>
+      </header>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">
+              "The Milano Virgin Wool Overcoat is a revelation. The drape, the horn buttons, and the immaculate shoulder line rival Savile Row bespoke coats triple the price."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Dr. Babatunde A." class="testimonial-avatar">
+            <div class="author-info">
+              <h5>Dr. Babatunde A.</h5>
+              <span>Lagos, Nigeria &bull; Verified Client</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">
+              "The Aura Silk Slip Dress is pure perfection. I wore it for an evening gala in Abuja and received endless compliments on how fluid and luminescent the silk is."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Chioma E." class="testimonial-avatar">
+            <div class="author-info">
+              <h5>Chioma E.</h5>
+              <span>Abuja, Nigeria &bull; Verified Client</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">
+              "LUXEWEAR's attention to delivery packaging and prompt doorstep concierge service in Victoria Island is second to none. Truly the modern standard of luxury."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Emeka N." class="testimonial-avatar">
+            <div class="author-info">
+              <h5>Emeka N.</h5>
+              <span>Port Harcourt, Nigeria &bull; Verified Client</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SUBSCRIPTION -->
+    <section class="container" aria-label="Newsletter">
+      <div class="newsletter-section">
+        <div class="newsletter-content">
+          <span class="text-uppercase" style="color:var(--color-accent); margin-bottom:0.75rem; display:block;">Private Client Circle</span>
+          <h2>Experience LUXEWEAR First</h2>
+          <p>
+            Join our private newsletter to receive seasonal atelier lookbooks, private salon invitations, and 15% off your inaugural order.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Join Gazette</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            LUXEWEAR
+            <span class="tagline">HAUTE COLLECTION</span>
+          </a>
+          <p>
+            Curators of contemporary elegance. We unite architectural silhouettes, exceptional European & African craftsmanship, and timeless textiles for modern men and women.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.1-2.1.1-3l1.4-6s-.4-.8-.4-1.9c0-1.8 1-3.2 2.3-3.2 1.1 0 1.6.8 1.6 1.8 0 1.1-.7 2.8-1.1 4.3-.3 1.3.6 2.3 1.9 2.3 2.3 0 4-2.4 4-5.9 0-3.1-2.2-5.3-5.5-5.3-3.7 0-5.9 2.8-5.9 5.7 0 1.1.4 2.3 1 3 .1.1.1.2.1.4l-.4 1.5c-.1.2-.2.3-.4.2-1.5-.7-2.4-2.8-2.4-4.5 0-3.7 2.7-7.1 7.8-7.1 4.1 0 7.3 2.9 7.3 6.9 0 4.1-2.6 7.4-6.2 7.4-1.2 0-2.3-.6-2.7-1.4l-.7 2.8c-.3 1-1 2.3-1.5 3.1A10 10 0 1 0 12 2z"/></svg>
+            </a>
+            <a href="https://twitter.com" class="social-link" aria-label="X / Twitter" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Full Catalogue</a></li>
+            <li><a href="men.html">Men's Wardrobe</a></li>
+            <li><a href="women.html">Women's Wardrobe</a></li>
+            <li><a href="shop.html?cat=shoes">Footwear & Loafers</a></li>
+            <li><a href="shop.html?cat=accessories">Leather Goods & Accessories</a></li>
+            <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Services</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Boutique Locations</a></li>
+            <li><a href="contact.html#faqs">Shipping & Delivery</a></li>
+            <li><a href="contact.html#faqs">Returns & Exchanges</a></li>
+            <li><a href="account.html">Client Account</a></li>
+            <li><a href="wishlist.html">Saved Wishlist</a></li>
+            <li><a href="about.html">Our Craftsmanship</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Private Gazette</h4>
+          <p style="color:#A9A29A; font-size:0.875rem; margin-bottom:1rem;">
+            Receive seasonal lookbooks, private atelier invitations, and private client previews.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUXEWEAR Atelier Ltd. All rights reserved. Registered Fashion House.</p>
+        <div class="payment-methods">
+          <span class="payment-pill">Mastercard</span>
+          <span class="payment-pill">Visa</span>
+          <span class="payment-pill">Verve</span>
+          <span class="payment-pill">Bank Transfer</span>
+          <span class="payment-pill">Pay on Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Populate New Arrivals & Best Sellers on Homepage
+    document.addEventListener('DOMContentLoaded', () => {
+      const newArrivalsGrid = document.getElementById('homeNewArrivalsGrid');
+      const bestSellersGrid = document.getElementById('homeBestSellersGrid');
+
+      if (newArrivalsGrid) {
+        const arrivals = getNewArrivals(4);
+        newArrivalsGrid.innerHTML = arrivals.map(p => renderProductCard(p)).join('');
+      }
+
+      if (bestSellersGrid) {
+        const bestSellers = getBestSellers(4);
+        bestSellersGrid.innerHTML = bestSellers.map(p => renderProductCard(p)).join('');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "luxewear-ecommerce",
+  "version": "1.0.0",
+  "description": "LUXEWEAR — Multi-Page Modern Luxury Clothing E-Commerce Website (Pure HTML5, CSS3, Vanilla JavaScript)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "ecommerce",
+    "luxury-fashion",
+    "html5",
+    "css3",
+    "vanilla-javascript",
+    "multi-page-website"
+  ],
+  "author": "LUXEWEAR Atelier",
+  "license": "MIT"
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Care & Concierge — LUXEWEAR</title>
+  <meta name="description" content="Connect with the LUXEWEAR concierge for private styling fittings, sizing advice, bespoke orders, and client inquiries.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Special announcements">
+    <div class="announcement-container">
+      <div class="announcement-text">
+        Complimentary express delivery across Nigeria on orders over <strong>₦100,000</strong> &bull; Use code <strong>LUXE10</strong> for 10% off
+      </div>
+      <button type="button" class="announcement-close" aria-label="Close announcement">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <button type="button" class="hamburger-btn" aria-label="Open mobile navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="index.html" class="brand-logo" aria-label="LUXEWEAR Homepage">
+        LUXEWEAR
+        <span class="tagline">HAUTE COLLECTION</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="men.html" class="nav-link">Men</a>
+        <a href="women.html" class="nav-link">Women</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="action-btn search-trigger-btn" aria-label="Search catalogue">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="account.html" class="action-btn" aria-label="Customer Account">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="wishlist.html" class="action-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge-count badge-wishlist-count" style="display:none;">0</span>
+        </a>
+        <a href="cart.html" class="action-btn" aria-label="Shopping Bag">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge-count badge-cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-nav-header">
+        <span class="brand-logo" style="font-size:1.35rem;">LUXEWEAR</span>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop All</a>
+        <a href="men.html">Men's Collection</a>
+        <a href="women.html">Women's Collection</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="account.html">My Account</a>
+        <a href="wishlist.html">Saved Wishlist</a>
+      </nav>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="cart.html" class="btn btn-primary btn-block btn-sm">View Shopping Bag</a>
+      <p style="font-size:0.75rem; color:var(--text-muted); text-align:center;">Lagos &bull; Abuja &bull; Worldwide</p>
+    </div>
+  </aside>
+  <div class="drawer-overlay"></div>
+
+  <!-- Quick Search Modal -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search Catalogue">
+    <div class="search-modal-content">
+      <div class="search-form-header">
+        <h3>Search the LUXEWEAR Boutique</h3>
+        <button type="button" class="search-modal-close" aria-label="Close search">&times;</button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="search" name="q" placeholder="Search by garment, fabric, color, or style..." autocomplete="off" required>
+          <button type="submit" aria-label="Submit search">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main class="container section-padding-sm">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span class="current">Contact & Concierge</span>
+    </nav>
+
+    <div style="margin-bottom:3rem;">
+      <span class="text-uppercase" style="color:var(--color-accent); font-weight:600;">At Your Service</span>
+      <h1 style="margin-top:0.35rem;">Client Care & Concierge</h1>
+      <p style="max-width:650px; margin-top:0.5rem;">
+        Whether you require guidance on garment sizing, wish to book a private salon fitting, or have inquiries regarding orders, our dedicated advisors are at your disposal.
+      </p>
+    </div>
+
+    <!-- Contact 2-Column Layout -->
+    <div class="contact-layout">
+      <!-- Left Column: Boutiques & Contact Information -->
+      <div>
+        <h3 style="margin-bottom:1.5rem;">Our Flagship Salons</h3>
+
+        <div class="boutique-card">
+          <h4>Lagos Flagship Boutique</h4>
+          <p style="font-size:0.9rem; margin-bottom:0.5rem;">
+            14A Ahmadu Bello Way, Victoria Island, Lagos, Nigeria
+          </p>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.5rem;">
+            Direct: +234 (01) 888 4920 &bull; WhatsApp: +234 803 555 0192
+          </p>
+          <p style="font-size:0.85rem; color:var(--text-muted);">
+            Email: <a href="mailto:lagos@luxewear.com" style="color:var(--color-accent);">lagos@luxewear.com</a>
+          </p>
+        </div>
+
+        <div class="boutique-card">
+          <h4>Abuja Private Atelier</h4>
+          <p style="font-size:0.9rem; margin-bottom:0.5rem;">
+            Plot 812 Aguiyi Ironsi Street, Maitama District, Abuja, Nigeria
+          </p>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.5rem;">
+            Direct: +234 (09) 461 8830 &bull; WhatsApp: +234 802 444 0184
+          </p>
+          <p style="font-size:0.85rem; color:var(--text-muted);">
+            Email: <a href="mailto:abuja@luxewear.com" style="color:var(--color-accent);">abuja@luxewear.com</a>
+          </p>
+        </div>
+
+        <div style="margin-top:2rem; padding:1.5rem; background:var(--bg-secondary); border-radius:var(--radius-sm); border:1px solid var(--color-border);">
+          <h4 style="font-size:1rem; margin-bottom:0.5rem;">Hours of Reception</h4>
+          <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.7;">
+            <strong>Monday – Friday:</strong> 10:00 AM – 7:00 PM (WAT)<br>
+            <strong>Saturday:</strong> 11:00 AM – 6:00 PM (WAT)<br>
+            <strong>Sunday:</strong> By private appointment only
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Contact Form -->
+      <div>
+        <div style="background:var(--bg-white); border:1px solid var(--color-border); border-radius:var(--radius-sm); padding: clamp(1.5rem, 4vw, 2.5rem); box-shadow:var(--shadow-sm);">
+          <h3 style="margin-bottom:0.5rem;">Send a Message</h3>
+          <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:1.5rem;">
+            Fill in your details below. Our styling advisors respond within 24 business hours.
+          </p>
+
+          <form id="clientContactForm" novalidate>
+            <div class="form-group">
+              <label for="contactFullName">Your Full Name *</label>
+              <input type="text" id="contactFullName" class="form-control" placeholder="e.g. Zara Okonjo" required>
+              <div class="field-error-msg" id="contactErrName">Please enter your name.</div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="client@luxewear.com" required>
+                <div class="field-error-msg" id="contactErrEmail">Please provide a valid email.</div>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone / WhatsApp</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="+234 800 000 0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Inquiry Subject *</label>
+              <select id="contactSubject" class="form-control" required>
+                <option value="">Select Topic</option>
+                <option value="styling">Styling Consultation & Sizing Advice</option>
+                <option value="fitting">Book Private Boutique Fitting</option>
+                <option value="order">Order Status & Delivery Inquiry</option>
+                <option value="returns">Returns & Exchanges</option>
+                <option value="press">Press, Editorial & Partnerships</option>
+              </select>
+              <div class="field-error-msg" id="contactErrSubject">Please choose a subject.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="How may our concierge assist your wardrobe today?..." required></textarea>
+              <div class="field-error-msg" id="contactErrMessage">Please write your message.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnSubmitContact">
+              Transmit Inquiry &rarr;
+            </button>
+          </form>
+
+          <!-- Feedback Alert -->
+          <div id="contactDemoSuccess" style="display:none; margin-top:1.5rem; padding:1.25rem; background:var(--color-success-bg); border-left:4px solid var(--color-success); border-radius:var(--radius-sm); font-size:0.875rem; color:var(--color-success);">
+            <strong>Inquiry Received (Demo):</strong> Thank you for contacting LUXEWEAR. Your demo inquiry has been registered in our client concierge queue.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently Asked Questions Accordion -->
+    <section class="faq-section" id="faqs" aria-label="Frequently Asked Questions">
+      <header class="section-header">
+        <span class="subtitle">Concierge Answers</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Essential guidance on delivery protocols, sizing standards, and bespoke care.</p>
+      </header>
+
+      <div style="max-width:800px; margin:0 auto;" class="product-accordion">
+        <div class="accordion-item active">
+          <button type="button" class="accordion-trigger">
+            <span>What are your domestic delivery timelines within Nigeria?</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-panel" style="max-height:200px;">
+            <div class="accordion-panel-inner">
+              For metropolitan Lagos and Abuja, express orders placed before 1:00 PM are delivered the next business day. Nationwide transit across all 36 states typically arrives within 2 to 4 business days via DHL Express and GIG Logistics.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>What is your returns and exchange policy?</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              We offer a 14-day return and exchange window from the date of package delivery. All items must remain unworn, unaltered, and with all original security tags and dust bags attached. Complimentary door-to-door courier pickups are coordinated for size exchanges.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>Can I book a private salon fitting at your boutiques?</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              Yes. Both our Victoria Island and Maitama locations offer private suite appointments with champagne hospitality and dedicated sartorial advisors. Select "Book Private Boutique Fitting" in the form above to reserve your hour.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>Are garments true to size?</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              All LUXEWEAR items follow standard European tailoring measurements. For relaxed garments such as our linen shirts and wide-leg trousers, we design with natural ease. For tailored blazers and gowns, refer to our sizing guides or contact our styling team for personal guidance.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            LUXEWEAR
+            <span class="tagline">HAUTE COLLECTION</span>
+          </a>
+          <p>
+            Curators of contemporary elegance. We unite architectural silhouettes, exceptional European & African craftsmanship, and timeless textiles for modern men and women.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Full Catalogue</a></li>
+            <li><a href="men.html">Men's Wardrobe</a></li>
+            <li><a href="women.html">Women's Wardrobe</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Client Services</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Boutique Locations</a></li>
+            <li><a href="account.html">Client Account</a></li>
+            <li><a href="wishlist.html">Saved Wishlist</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Private Gazette</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUXEWEAR Atelier Ltd. All rights reserved.</p>
+        <div class="payment-methods">
+          <span class="payment-pill">Mastercard</span>
+          <span class="payment-pill">Visa</span>
+          <span class="payment-pill">Verve</span>
+          <span class="payment-pill">Bank Transfer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // FAQ Accordion logic
+      const accordions = document.querySelectorAll('.product-accordion .accordion-item');
+      accordions.forEach(item => {
+        const trigger = item.querySelector('.accordion-trigger');
+        const panel = item.querySelector('.accordion-panel');
+        if (trigger && panel) {
+          trigger.addEventListener('click', () => {
+            const isOpen = item.classList.contains('active');
+            accordions.forEach(o => {
+              o.classList.remove('active');
+              const p = o.querySelector('.accordion-panel');
+              if (p) p.style.maxHeight = null;
+            });
+            if (!isOpen) {
+              item.classList.add('active');
+              panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+          });
+        }
+      });
+
+      // Contact Form client validation & demo submission
+      const form = document.getElementById('clientContactForm');
+      const successBox = document.getElementById('contactDemoSuccess');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('contactFullName');
+          const email = document.getElementById('contactEmail');
+          const subject = document.getElementById('contactSubject');
+          const msg = document.getElementById('contactMessage');
+
+          let hasError = false;
+
+          function validateField(input, errId, condition) {
+            const errEl = document.getElementById(errId);
+            if (!condition) {
+              input.classList.add('error');
+              if (errEl) errEl.classList.add('visible');
+              hasError = true;
+            } else {
+              input.classList.remove('error');
+              if (errEl) errEl.classList.remove('visible');
+            }
+          }
+
+          validateField(name, 'contactErrName', name.value.trim().length > 1);
+          validateField(email, 'contactErrEmail', email.value.includes('@') && email.value.includes('.'));
+          validateField(subject, 'contactErrSubject', subject.value !== '');
+          validateField(msg, 'contactErrMessage', msg.value.trim().length > 5);
+
+          if (hasError) {
+            showToast('Please correct the highlighted fields.', 'error');
+            return;
+          }
+
+          if (successBox) successBox.style.display = 'block';
+          showToast('Inquiry received! Our styling concierge will be in touch.', 'success');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

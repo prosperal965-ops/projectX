@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — LUXEWEAR</title>
+  <meta name="description" content="Explore luxury garment specifications, artisanal fabrics, sizing options, and delivery information at LUXEWEAR.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Special announcements">
+    <div class="announcement-container">
+      <div class="announcement-text">
+        Complimentary express delivery across Nigeria on orders over <strong>₦100,000</strong> &bull; Use code <strong>LUXE10</strong> for 10% off
+      </div>
+      <button type="button" class="announcement-close" aria-label="Close announcement">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <button type="button" class="hamburger-btn" aria-label="Open mobile navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="index.html" class="brand-logo" aria-label="LUXEWEAR Homepage">
+        LUXEWEAR
+        <span class="tagline">HAUTE COLLECTION</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="men.html" class="nav-link">Men</a>
+        <a href="women.html" class="nav-link">Women</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="action-btn search-trigger-btn" aria-label="Search catalogue">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="account.html" class="action-btn" aria-label="Customer Account">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="wishlist.html" class="action-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge-count badge-wishlist-count" style="display:none;">0</span>
+        </a>
+        <a href="cart.html" class="action-btn" aria-label="Shopping Bag">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge-count badge-cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-nav-header">
+        <span class="brand-logo" style="font-size:1.35rem;">LUXEWEAR</span>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop All</a>
+        <a href="men.html">Men's Collection</a>
+        <a href="women.html">Women's Collection</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="account.html">My Account</a>
+        <a href="wishlist.html">Saved Wishlist</a>
+      </nav>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="cart.html" class="btn btn-primary btn-block btn-sm">View Shopping Bag</a>
+      <p style="font-size:0.75rem; color:var(--text-muted); text-align:center;">Lagos &bull; Abuja &bull; Worldwide</p>
+    </div>
+  </aside>
+  <div class="drawer-overlay"></div>
+
+  <!-- Quick Search Modal -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search Catalogue">
+    <div class="search-modal-content">
+      <div class="search-form-header">
+        <h3>Search the LUXEWEAR Boutique</h3>
+        <button type="button" class="search-modal-close" aria-label="Close search">&times;</button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="search" name="q" placeholder="Search by garment, fabric, color, or style..." autocomplete="off" required>
+          <button type="submit" aria-label="Submit search">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main class="container section-padding-sm">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <a href="shop.html" id="breadcrumbCategory">Collection</a>
+      <span class="separator">/</span>
+      <span class="current" id="breadcrumbCurrent">Product Details</span>
+    </nav>
+
+    <!-- Product Details Main Layout -->
+    <div class="product-details-layout">
+      <!-- Left: Interactive Gallery -->
+      <section class="gallery-container" aria-label="Product Image Gallery">
+        <div class="gallery-thumbnails" id="productThumbnails">
+          <!-- Thumbnails populated by js/product.js -->
+        </div>
+        <div class="gallery-main">
+          <img id="productMainImage" src="" alt="Product Main Image">
+        </div>
+      </section>
+
+      <!-- Right: Product Information & Purchase Panel -->
+      <section class="product-info-panel" aria-label="Product Information">
+        <div class="product-header-meta">
+          <span class="product-category" id="productCategory">Atelier Item</span>
+          <h1 id="productTitle">Garment Name</h1>
+          <div class="product-rating-row" id="productRating">
+            <!-- Rating stars and review count -->
+          </div>
+        </div>
+
+        <div class="product-price-section">
+          <span class="product-price-large" id="productPrice">₦0</span>
+          <span class="product-price-orig-large" id="productOriginalPrice" style="display:none;"></span>
+          <span class="badge badge-sale" id="productDiscountBadge" style="display:none;">SAVE 15%</span>
+        </div>
+
+        <p class="product-description-text" id="productDescription">
+          Garment description and atelier specifications...
+        </p>
+
+        <!-- Color Selector -->
+        <div class="selector-block">
+          <div class="selector-header">
+            <span>Colour: <span class="selected-value" id="selectedColorLabel">Default</span></span>
+          </div>
+          <div class="color-option-buttons" id="productColorsList">
+            <!-- Populated by js/product.js -->
+          </div>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="selector-block">
+          <div class="selector-header">
+            <span>Size: <span class="selected-value" id="selectedSizeLabel">Please Select</span></span>
+            <a href="#sizeGuide" style="color:var(--color-accent); font-size:0.8rem; text-decoration:underline;">Size Guide</a>
+          </div>
+          <div class="size-option-buttons" id="productSizesList">
+            <!-- Populated by js/product.js -->
+          </div>
+          <div id="sizeValidationError" style="display:none; color:var(--color-danger); font-size:0.8rem; font-weight:600; margin-top:0.35rem;">
+            Please select a size to proceed with adding to bag.
+          </div>
+        </div>
+
+        <!-- Quantity Counter & Action Buttons -->
+        <div class="qty-actions-row">
+          <div class="qty-counter">
+            <button type="button" class="qty-btn" id="qtyMinusBtn" aria-label="Decrease quantity">&minus;</button>
+            <input type="text" class="qty-input" id="productQuantityInput" value="1" readonly>
+            <button type="button" class="qty-btn" id="qtyPlusBtn" aria-label="Increase quantity">&plus;</button>
+          </div>
+          <button type="button" class="btn btn-primary btn-block btn-lg" id="btnProductAddToCart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Add to Shopping Bag
+          </button>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-outline btn-block" id="btnProductWishlist">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            Add to Wishlist
+          </button>
+        </div>
+
+        <!-- Trust Features -->
+        <div style="background:var(--bg-secondary); border-radius:var(--radius-sm); padding:1.25rem; display:grid; grid-template-columns:1fr 1fr; gap:1rem; font-size:0.8rem; border:1px solid var(--color-border);">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/></svg>
+            <span>Express Nigerian Delivery (24-48h)</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+            <span>14-Day Complimentary Exchanges</span>
+          </div>
+        </div>
+
+        <!-- Accordion Details -->
+        <div class="product-accordion" id="sizeGuide">
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger">
+              <span>Fabric Composition & Tailoring Details</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <ul id="accordionDetailsList">
+                  <!-- Details list populated by js/product.js -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger">
+              <span>Delivery, Returns & Insured Packaging</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p>
+                  All LUXEWEAR orders are packaged in archival breathable garment bags and shipped in reinforced presentation boxes.
+                </p>
+                <ul style="margin-top:0.5rem;">
+                  <li><strong>Lagos & Abuja:</strong> Next-day courier delivery available for orders placed before 1:00 PM.</li>
+                  <li><strong>Nationwide Nigeria:</strong> 2 to 4 business days via DHL Express / GIG Logistics.</li>
+                  <li><strong>Complimentary Delivery:</strong> Applied automatically on all orders exceeding ₦100,000.</li>
+                  <li><strong>Returns:</strong> 14 days from reception for unworn garments with original tags intact.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger">
+              <span>Sizing & Fit Consultation</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <p>
+                  This silhouette is tailored true to European luxury sizing. If you are between sizes or prefer an effortless oversized aesthetic, we recommend ordering one size up.
+                </p>
+                <p style="margin-top:0.5rem;">
+                  Need bespoke sizing assistance? Contact our concierge at <a href="contact.html" style="color:var(--color-accent); text-decoration:underline;">clientcare@luxewear.com</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Related Products -->
+    <section class="section-padding container" style="border-top:1px solid var(--color-border);" aria-label="Related Garments">
+      <header class="section-header">
+        <span class="subtitle">Complete the Ensemble</span>
+        <h2>Curated Pairings</h2>
+        <p>Garments selected by our creative director to harmonize with your selection.</p>
+      </header>
+
+      <div class="products-grid" id="relatedProductsGrid">
+        <!-- Rendered by js/product.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            LUXEWEAR
+            <span class="tagline">HAUTE COLLECTION</span>
+          </a>
+          <p>
+            Curators of contemporary elegance. We unite architectural silhouettes, exceptional European & African craftsmanship, and timeless textiles for modern men and women.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Full Catalogue</a></li>
+            <li><a href="men.html">Men's Wardrobe</a></li>
+            <li><a href="women.html">Women's Wardrobe</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Client Services</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Boutique Locations</a></li>
+            <li><a href="account.html">Client Account</a></li>
+            <li><a href="wishlist.html">Saved Wishlist</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Private Gazette</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUXEWEAR Atelier Ltd. All rights reserved.</p>
+        <div class="payment-methods">
+          <span class="payment-pill">Mastercard</span>
+          <span class="payment-pill">Visa</span>
+          <span class="payment-pill">Verve</span>
+          <span class="payment-pill">Bank Transfer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

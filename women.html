@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Collection — LUXEWEAR</title>
+  <meta name="description" content="Discover LUXEWEAR Women's Collection: bias-cut silk gowns, tailored wool blazers, pleated palazzo trousers, and sculptural mules.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Special announcements">
+    <div class="announcement-container">
+      <div class="announcement-text">
+        Complimentary express delivery across Nigeria on orders over <strong>₦100,000</strong> &bull; Use code <strong>LUXE10</strong> for 10% off
+      </div>
+      <button type="button" class="announcement-close" aria-label="Close announcement">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <button type="button" class="hamburger-btn" aria-label="Open mobile navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="index.html" class="brand-logo" aria-label="LUXEWEAR Homepage">
+        LUXEWEAR
+        <span class="tagline">HAUTE COLLECTION</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="men.html" class="nav-link">Men</a>
+        <a href="women.html" class="nav-link active">Women</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="action-btn search-trigger-btn" aria-label="Search catalogue">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="account.html" class="action-btn" aria-label="Customer Account">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="wishlist.html" class="action-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge-count badge-wishlist-count" style="display:none;">0</span>
+        </a>
+        <a href="cart.html" class="action-btn" aria-label="Shopping Bag">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge-count badge-cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-nav-header">
+        <span class="brand-logo" style="font-size:1.35rem;">LUXEWEAR</span>
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop All</a>
+        <a href="men.html">Men's Collection</a>
+        <a href="women.html" class="active">Women's Collection</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="account.html">My Account</a>
+        <a href="wishlist.html">Saved Wishlist</a>
+      </nav>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="cart.html" class="btn btn-primary btn-block btn-sm">View Shopping Bag</a>
+      <p style="font-size:0.75rem; color:var(--text-muted); text-align:center;">Lagos &bull; Abuja &bull; Worldwide</p>
+    </div>
+  </aside>
+  <div class="drawer-overlay"></div>
+
+  <!-- Quick Search Modal -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search Catalogue">
+    <div class="search-modal-content">
+      <div class="search-form-header">
+        <h3>Search the LUXEWEAR Boutique</h3>
+        <button type="button" class="search-modal-close" aria-label="Close search">&times;</button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="search" name="q" placeholder="Search by garment, fabric, color, or style..." autocomplete="off" required>
+          <button type="submit" aria-label="Submit search">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <!-- Women's Hero Banner -->
+    <section class="page-hero" aria-label="Women's Collection Hero">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=80" alt="Women's Haute Couture Showcase" class="hero-bg-image">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">Fluid Femininity & Grace</span>
+          <h1>The Femme Atelier</h1>
+          <p>
+            Liquid Mulberry silk slip gowns, sharp double-breasted blazers, dramatic palazzo silhouettes, and hand-woven calfskin leather accessories.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="separator">/</span>
+        <span class="current">Women's Wardrobe</span>
+      </nav>
+
+      <!-- Category Filter Pills -->
+      <nav class="category-pill-bar" aria-label="Women's Categories">
+        <button type="button" class="category-pill active" data-category="all">All Women's Pieces</button>
+        <button type="button" class="category-pill" data-category="Dresses">Silk & Evening Dresses</button>
+        <button type="button" class="category-pill" data-category="Jackets">Blazers & Trenches</button>
+        <button type="button" class="category-pill" data-category="Tops">Draped Tops & Blouses</button>
+        <button type="button" class="category-pill" data-category="Skirts">Satin Slip Skirts</button>
+        <button type="button" class="category-pill" data-category="Trousers">Palazzo Trousers</button>
+        <button type="button" class="category-pill" data-category="Bags">Handwoven Leather Bags</button>
+        <button type="button" class="category-pill" data-category="Shoes">Architectural Heels</button>
+      </nav>
+
+      <!-- Shop Layout: Sidebar Filters + Products -->
+      <div class="shop-layout">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar" aria-label="Product Filters">
+          <div class="filter-sidebar-header">
+            <h3>Refine Women</h3>
+            <button type="button" class="btn-reset-filters">Reset All</button>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-title">Maximum Price</div>
+            <div class="price-range-wrapper">
+              <input type="range" class="range-slider" id="priceRangeSlider" min="20000" max="250000" step="5000" value="250000">
+              <div class="price-range-inputs">
+                <span>₦20,000</span>
+                <span id="priceRangeDisplay" style="color:var(--color-accent); font-weight:700;">₦250,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-title">Women's Sizes</div>
+            <div class="size-pill-group">
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="XS">XS</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="S">S</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="M">M</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="L">L</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="XL">XL</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="37">37</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="38">38</button>
+              <button type="button" class="size-pill-btn size-filter-btn" data-size="39">39</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-title">Colour Tone</div>
+            <div class="color-swatch-picker">
+              <span class="color-swatch-item color-filter-swatch" style="background:#D8C5AC;" data-color="Champagne" title="Champagne / Beige"></span>
+              <span class="color-swatch-item color-filter-swatch" style="background:#FAF8F4;" data-color="Ivory" title="Ivory"></span>
+              <span class="color-swatch-item color-filter-swatch" style="background:#1D1D1D;" data-color="Black" title="Black"></span>
+              <span class="color-swatch-item color-filter-swatch" style="background:#6B4F3A;" data-color="Mocha" title="Mocha Brown"></span>
+              <span class="color-swatch-item color-filter-swatch" style="background:#D4AF37;" data-color="Gold" title="Gold"></span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Products Area -->
+        <section aria-label="Women's Wardrobe Grid">
+          <div class="shop-toolbar">
+            <div class="shop-results-count" id="shopResultsCount">
+              Showing women's collection...
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+              <button type="button" class="btn btn-outline btn-sm mobile-filter-trigger">Filter</button>
+              <div class="shop-sort-group">
+                <label for="shopSortSelect">Sort:</label>
+                <select id="shopSortSelect" class="shop-sort-select">
+                  <option value="featured">Featured First</option>
+                  <option value="newest">Newest Additions</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Top Rated</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-grid grid-3" id="shopProductsGrid">
+            <!-- Rendered by js/shop.js with gender=women -->
+          </div>
+
+          <div class="pagination-wrapper">
+            <button type="button" class="btn btn-outline btn-lg" id="loadMoreProductsBtn">Load More</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Editorial Women's Feature -->
+      <section class="editorial-banner" style="margin-top: 5rem;" aria-label="Women's Editorial Feature">
+        <div class="editorial-grid">
+          <div class="editorial-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80" alt="Silk Evening Gown Editorial">
+          </div>
+          <div class="editorial-content">
+            <span class="subtitle">The Silk Archive</span>
+            <h2>Liquid Radiance in Motion</h2>
+            <p>
+              Our 22-momme Mulberry silk is spun with an incomparable weight that prevents clinging while tracing graceful movement. Ideal for balmy rooftop soirees in Lagos or gala evenings abroad.
+            </p>
+            <a href="shop.html?cat=dresses" class="btn btn-secondary">Explore Silk Gowns</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            LUXEWEAR
+            <span class="tagline">HAUTE COLLECTION</span>
+          </a>
+          <p>
+            Curators of contemporary elegance. We unite architectural silhouettes, exceptional European & African craftsmanship, and timeless textiles for modern men and women.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Full Catalogue</a></li>
+            <li><a href="men.html">Men's Wardrobe</a></li>
+            <li><a href="women.html">Women's Wardrobe</a></li>
+            <li><a href="shop.html?cat=dresses">Silk Gowns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Client Services</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Boutique Locations</a></li>
+            <li><a href="contact.html#faqs">Shipping & Delivery</a></li>
+            <li><a href="account.html">Client Account</a></li>
+            <li><a href="wishlist.html">Saved Wishlist</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Private Gazette</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUXEWEAR Atelier Ltd. All rights reserved.</p>
+        <div class="payment-methods">
+          <span class="payment-pill">Mastercard</span>
+          <span class="payment-pill">Visa</span>
+          <span class="payment-pill">Verve</span>
+          <span class="payment-pill">Bank Transfer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/shop.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      LUXE_SHOP.init({ gender: 'women' });
+    });
+  </script>
+</body>
+</html>
